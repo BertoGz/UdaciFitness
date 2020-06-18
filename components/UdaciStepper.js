@@ -1,12 +1,12 @@
 import React from 'react'
-import {View, Text, TouchableOpacity} from 'react-native'
+import {View, Text, TouchableOpacity, StyleSheet, Platform} from 'react-native'
 import {FontAwesome, Entypo} from '@expo/vector-icons'
 
 
 export default function UdaciStepper({max,unit,step,value,onIncrement,onDecrement}){
 	return(
-		<View>
-			<View>
+		<View style={[styles.row], {justifyContent:'space-between'}}>
+			<View style={{flexDirection:'row'}}>
 				<TouchableOpacity onPress={onDecrement}>
 					<FontAwesome name='minus' size={30} color={'black'}/>
 				</TouchableOpacity>
@@ -22,3 +22,11 @@ export default function UdaciStepper({max,unit,step,value,onIncrement,onDecremen
 		</View>
 	)
 }
+
+const styles = StyleSheet.create({
+	row:{
+		flexDirection:'row',
+		flex:1,
+		alignItems:'center'
+	},
+})

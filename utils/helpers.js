@@ -54,7 +54,8 @@ const styles=StyleSheet.create({
     height: 50,
     justifyContent: 'center',
     alignItems:'center',
-    marginRight: 20 
+    marginRight: 20 ,
+
   }
 })
 
