@@ -103,8 +103,8 @@ export function getMetricMetaInfo(metric){
     sleep:{
       displayName:'Sleep ',
       max:24,
-      unit:'meters',
-      step:100,
+      unit:'hours',
+      step:1,
       type:'slider',
       getIcon(){
         return(
